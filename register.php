@@ -1,5 +1,5 @@
 <?php  
-	require_once('functions/session.php');
+	require_once('functions/auth.php');
 ?>
 <!DOCTYPE html>
 <html>

@@ -1,10 +1,5 @@
 <?php  
-	require_once('functions/session.php');
-	if (isset($_SESSION['id'])) {
-		if (!empty($_SESSION['id'])) {
-			header('location: welcome.php');
-		}
-	}
+	require_once('functions/auth.php');
 ?>
 <!DOCTYPE html>
 <html>
