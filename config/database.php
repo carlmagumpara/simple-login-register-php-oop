@@ -9,7 +9,7 @@ class Database
 
 	function __construct()
 	{
-		$this->conn = new Mysqli($_ENV['DB_HOST'], $_ENV['DB_USERNAME'], $_ENV['DB_PASSWORD'], $_ENV['DB_DATABASE']);
+		$this->conn = new Mysqli($_ENV['DB_HOST'], $_ENV['DB_USERNAME'], $_ENV['DB_PASSWORD'], $_ENV['DB_DATABASE'], $_ENV['DB_PORT']);
 	}
 
 	public function connection() {
