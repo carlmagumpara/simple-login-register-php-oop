@@ -1,4 +1,5 @@
-<?php  
+<?php
+	ini_set('display_errors', 1);
 	require_once('../config/database.php');
 	require_once('../classes/register.php');
 	$database = new Database();
@@ -29,7 +30,7 @@
 		} else if ($_POST['password'] != $_POST['retype-password']) {
 			$errors['password'] = 'password didnt match to retype password!';
 		} else {
-			$data['password'] = crypt($_POST['password'], '$1$gagooo$');
+			$data['password'] = crypt($_POST['password'], '$1$^R^PmUg^m$');
 		}
 	}
 

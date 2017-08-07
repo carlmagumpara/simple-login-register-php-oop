@@ -22,7 +22,7 @@
 		if (empty($_POST['password'])) {
 			$errors['password'] = 'password is empty!';
 		} else {
-			$data['password'] = crypt($_POST['password'], '$1$gagooo$');
+			$data['password'] = crypt($_POST['password'], '$1$^R^PmUg^m$');
 		}
 	}
 

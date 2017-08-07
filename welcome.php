@@ -40,11 +40,5 @@
 	    </div>
 	  </div>
 	</nav>
-
-
-
-<?php  
-	include('includes/footer.php');
-?>
 </body>
 </html>
