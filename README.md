@@ -2,5 +2,8 @@
 
 Need to run:
 
-composer install
-bower install
+- composer install
+- npm install
+- bower install
+
+> import sql from local database folder
