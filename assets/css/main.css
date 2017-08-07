@@ -1,0 +1,45 @@
+body {
+	background-color: #eee;
+}
+#login-panel {
+	margin-top: 50px;
+	background-color: #fff;
+}
+#login-panel h1 {
+	color: #333;
+}
+#login-panel .form-control, #login-panel .btn, #login-panel .alert {
+	border-radius: 0px;
+	box-shadow: none;
+	color: #333;
+	font-size: 15px;
+}
+#login-panel .form-control {
+	border: 3px solid #eee;
+}
+#login-panel .btn:hover {
+	color: #000;
+}
+.right {
+	text-align: right;
+}
+.f-right {
+	float: right;
+}
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.f-left {
+	float: left;
+}
+.bg-red {
+	background-color: #e94043;
+	color: #fff !important;
+}
+.bg-teal {
+	background-color: #00897b;
+	color: #fff !important;
+}
