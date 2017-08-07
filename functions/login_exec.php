@@ -1,4 +1,5 @@
 <?php  
+	ini_set('display_errors', 1);
 	require_once('../config/database.php');
 	require_once('../classes/login.php');
 	require_once('../functions/session.php');
