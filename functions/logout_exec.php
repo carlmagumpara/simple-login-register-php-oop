@@ -1,7 +1,10 @@
 <?php  
 	require_once('../functions/session.php');
-	session_unset();
-	session_destroy();
-	setcookie('PHPSESSID','',time()-3600,'/');
-	header('location: ../index.php');
+	if (isset($_POST['action'])) {
+		if ($_POST['action'] === 'logout') {
+			session_unset();
+			session_destroy();
+			echo json_encode(array('redirect' => 'index.php',));
+		}
+	}
 ?>

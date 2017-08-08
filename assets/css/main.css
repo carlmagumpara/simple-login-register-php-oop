@@ -1,8 +1,18 @@
 body {
 	background-color: #eee;
 }
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 #login-panel {
-	margin-top: 50px;
+	width: 100%;
+	margin-top: 0px;
 	background-color: #fff;
 }
 #login-panel h1 {
@@ -20,6 +30,13 @@ body {
 #login-panel .btn:hover {
 	color: #000;
 }
+#email-icon, #eye-icon {
+	padding: 0px 15px;
+    background-color: #fff;
+    border: 3px solid #eee;
+    border-radius: 0px;
+    border-right: 0px;
+}
 .right {
 	text-align: right;
 }
@@ -34,6 +51,9 @@ body {
 }
 .f-left {
 	float: left;
+}
+.display-none {
+	display: none;
 }
 .bg-red {
 	background-color: #e94043;

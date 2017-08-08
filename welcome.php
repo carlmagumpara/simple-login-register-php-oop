@@ -33,12 +33,24 @@
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Setting <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="functions/logout_exec.php">Logout</a></li>
+	            <li><a id="logout" href="functions/logout_exec.php">Logout</a></li>
 	          </ul>
 	        </li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#logout').click(function(e){
+				e.preventDefault();
+				$.post($(this).attr('href'), { action: 'logout' }, function(data){
+					document.cookie = 'PHPSESSID=;Path=/cv;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+					var res = JSON.parse(data);
+					window.location = res.redirect;
+				});
+			});
+		});
+	</script>
 </body>
 </html>
